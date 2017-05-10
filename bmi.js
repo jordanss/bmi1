@@ -6,11 +6,11 @@ var bmi
 var measure
 
 function clac() {
-	q1 = prompt("Enter your weight","Kilograms");
-	q2 = prompt("Enter your height","Meters");
+	q1 = document.getElementById("height").value;
+	q2 = document.getElementById("weight").value;
     w = parseInt(q1);
     h = parseInt(q2);
-    bmi = w/(h*2);
+    bmi = w/(h*h);
     document.getElementById("output").innerHTML = bmi;
     document.getElementById("bmi").innerHTML = "Your bmi is "+bmi;
     if (bmi > 0 && bmi <= 18.5) {
@@ -48,3 +48,5 @@ function measure(){
 	}
 
 }
+
+document.getElementById("calc").addEventListener("click", clac);
