@@ -1,0 +1,22 @@
+.measureimages {
+    width: 200px;
+    height: 300px;
+    display: none;
+    position: absolute;
+    top: 14%;
+    left: 50%;
+}
+
+.input {
+    width: 10%;
+}
+
+.m-label {
+    width: 5%;
+}
+
+.calc-button {
+    position:absolute;
+    left: 13%;
+    top: 30%;
+}
