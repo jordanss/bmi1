@@ -6,6 +6,11 @@ var bmi
 var measure
 
 function calc() {
+	document.getElementById("Obese").style.display = "none"
+	document.getElementById("Normal").style.display = "none"
+	document.getElementById("Underweight").style.display = "none"
+	document.getElementById("Overweight").style.display = "none"
+	document.getElementById("Unknown").style.display = "none"
 	q1 = document.getElementById("height").value;
 	q2 = document.getElementById("weight").value;
     w = parseInt(q1);
@@ -14,7 +19,7 @@ function calc() {
     document.getElementById("bmi").innerHTML = "Your bmi is "+bmi;
     if (bmi > 0 && bmi <= 18.5) {
 		document.getElementById("measure").innerHTML = "Underweight"
-		document.getElementById("Normal").style.display = "block"
+		document.getElementById("Underweight").style.display = "block"
 	}
 	else if (bmi > 18.5 && bmi <= 24.9) {
 		document.getElementById("measure").innerHTML = "Normal"
@@ -22,15 +27,15 @@ function calc() {
 	}
 	else if (bmi > 25 && bmi <= 29.9) {
 		document.getElementById("measure").innerHTML = "Overweight"
-		document.getElementById("Normal").style.display = "block"
+		document.getElementById("Overweight").style.display = "block"
 	}
 	else if ( bmi >= 30 ) {
 		document.getElementById("measure").innerHTML = "Obese"
-		document.getElementById("Normal").style.display = "block"
+		document.getElementById("Obese").style.display = "block"
 	}
 	else {
 		document.getElementById("measure").innerHTML = "Not possible"		
-		document.getElementById("Normal").style.display = "block"
+		document.getElementById("Unknown").style.display = "block"
 	}
 }
 
