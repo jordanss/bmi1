@@ -3,8 +3,8 @@
     height: 300px;
     display: none;
     position: absolute;
-    top: 14%;
-    left: 50%;
+    top: 10%;
+    left: 60%;
 }
 
 .input {
@@ -16,7 +16,9 @@
 }
 
 .calc-button {
-    position:absolute;
-    left: 13%;
-    top: 30%;
+    margin-left: 6%;
+}
+
+.bmi-container {
+    margin-left: 25%;
 }
